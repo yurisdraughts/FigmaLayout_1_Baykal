@@ -27,10 +27,20 @@ h1 {
 }
 
 .container {
-    margin: 20px 24px 0;
+    margin: 0 24px;
+}
+
+.text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 141.18%;
+    letter-spacing: 0.03em;
+    color: $main-color;
 }
 
 .header {
+    margin-top: 20px;
+
     &__top {
         height: 27px;
         margin-bottom: 60px;
@@ -53,7 +63,7 @@ h1 {
         width: 20px;
         height: 20px;
 
-        background-image: url('../images/closed-menu.svg');
+        background-image: url('../images/menu-icon_closed.svg');
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -65,27 +75,25 @@ h1 {
         margin-bottom: 30px;
     }
 
-    &__heading {
-        margin-right: 45px;
+    &__heading-wrapper {
+        width: 227px;
         height: 52px;
+        position: relative;
 
-        font-size: 60px;
-        font-weight: 700;
-        line-height: 1;
-        letter-spacing: 0.03em;
-        color: $accent-color;
-
-        background-image: url('../images/gostinica.svg');
-        background-size: 83px 20px;
+        background-image: url('../images/wave-decoration_gostinica.svg');
+        background-size: 83px;
         background-repeat: no-repeat;
         background-position: top right;
     }
 
-    &__text {
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 141.18%;
+    &__heading {
+        position: absolute;
+        top: -8px;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 77px;
         letter-spacing: 0.03em;
+        color: $accent-color;
     }
 
     &__reservation-btn {
@@ -107,6 +115,40 @@ h1 {
     &__background-img {
         height: 232px;
         background-image: url('../images/header-img.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.about-us {
+    margin-top: 60px;
+
+    &__heading {
+        max-width: fit-content;
+        height: 38px;
+
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: 0.03em;
+        color: $accent-color;
+
+        background-image: url('../images/wave-decoration.svg');
+        background-size: 60px;
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    &__text-wrapper {
+        margin: 30px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__background-img {
+        height: 182px;
+        background-image: url('../images/about-us-img.svg');
         background-size: contain;
         background-repeat: no-repeat;
     }
