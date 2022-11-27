@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 20px 24px 0;
+}
+
+.header__top {
+  height: 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+.header__top .logo {
+  height: 27px;
+  flex-grow: 1;
+  background-image: url("../images/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.header__top .menu {
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/closed-menu.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=style.css.map */
