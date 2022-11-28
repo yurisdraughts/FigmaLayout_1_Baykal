@@ -1,6 +1,7 @@
 $main-color: #686868;
 $accent-color: #2F70D9;
 $cta-color: #D95845;
+$footer-color: #282828;
 
 @font-face {
     font-family: Lora;
@@ -174,10 +175,63 @@ button {
         max-width: 126px;
         text-align: center;
     }
+
+    &__wi-fi {
+        background-image: url('../images/wi-fi.png');
+    }
+
+    &__24-7 {
+        background-image: url('../images/24-7.png');
+    }
+
+    &__parking {
+        background-image: url('../images/parking.png');
+    }
+
+    &__television {
+        background-image: url('../images/television.png');
+    }
+
+    &__cleaning {
+        background-image: url('../images/television.png');
+    }
+
+    &__bathhouse {
+        background-image: url('../images/bathhouse.png');
+    }
+
+    &__kitchen {
+        background-image: url('../images/kitchen.png');
+    }
+
+    &__banquet {
+        background-image: url('../images/banquet.png');
+    }
+
+    &__canteen {
+        background-image: url('../images/canteen.png');
+    }
 }
 
 .offer-card {
+    &__img {
+        width: 36px;
+        height: 36px;
+        margin: 0 auto 10px;
+        background-repeat: no-repeat;
+        background-size: 36px;
+    }
+
+    &__img_wi-fi {
+        height: 31px;
+    }
+
+    &__img_banquet {
+        height: 32.54px;
+    }
+
     &__heading {
+        margin-bottom: 5px;
         font-size: 12px;
         line-height: 15px;
     }
@@ -258,5 +312,95 @@ button {
         font-size: 25px;
         line-height: 32px;
         color: $cta-color;
+    }
+}
+
+.reviews {
+    &__cards-wrapper {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.review-card {
+    padding: 20px 42px 15px 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+    &__user-pic {
+        width: 60px;
+        height: 60px;
+        background-image: url('../images/user-pic.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__user {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__stay-period {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+.contacts {
+    &__card {
+        padding: 20px 52px 20px 51px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+    }
+
+    &__address-wrapper,
+    &__phone-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__address_bold {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+    }
+
+    &__phone {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: #000;
+    }
+}
+
+.footer {
+    background-color: $footer-color;
+    color: #fff;
+
+    &__wrapper {
+        padding: 40px 51px 25px 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__copyright {
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: initial;
     }
 }

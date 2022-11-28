@@ -148,8 +148,49 @@ button {
   max-width: 126px;
   text-align: center;
 }
+.we-offer__wi-fi {
+  background-image: url("../images/wi-fi.png");
+}
+.we-offer__24-7 {
+  background-image: url("../images/24-7.png");
+}
+.we-offer__parking {
+  background-image: url("../images/parking.png");
+}
+.we-offer__television {
+  background-image: url("../images/television.png");
+}
+.we-offer__cleaning {
+  background-image: url("../images/television.png");
+}
+.we-offer__bathhouse {
+  background-image: url("../images/bathhouse.png");
+}
+.we-offer__kitchen {
+  background-image: url("../images/kitchen.png");
+}
+.we-offer__banquet {
+  background-image: url("../images/banquet.png");
+}
+.we-offer__canteen {
+  background-image: url("../images/canteen.png");
+}
 
+.offer-card__img {
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 10px;
+  background-repeat: no-repeat;
+  background-size: 36px;
+}
+.offer-card__img_wi-fi {
+  height: 31px;
+}
+.offer-card__img_banquet {
+  height: 32.54px;
+}
 .offer-card__heading {
+  margin-bottom: 5px;
   font-size: 12px;
   line-height: 15px;
 }
@@ -216,4 +257,81 @@ button {
   font-size: 25px;
   line-height: 32px;
   color: #D95845;
+}
+
+.reviews__cards-wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.review-card {
+  padding: 20px 42px 15px 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.review-card__user-pic {
+  width: 60px;
+  height: 60px;
+  background-image: url("../images/user-pic.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.review-card__user {
+  font-size: 16px;
+  line-height: 20px;
+}
+.review-card__stay-period {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.contacts__card {
+  padding: 20px 52px 20px 51px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+.contacts__address-wrapper, .contacts__phone-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contacts__address_bold {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+}
+.contacts__phone {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000;
+}
+
+.footer {
+  background-color: #282828;
+  color: #fff;
+}
+.footer__wrapper {
+  padding: 40px 51px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__copyright {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: initial;
 }/*# sourceMappingURL=style.css.map */
