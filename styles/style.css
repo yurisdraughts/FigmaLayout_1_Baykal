@@ -1,10 +1,27 @@
 @font-face {
   font-family: Lora;
-  src: url("../fonts/Lora-Bold.ttf"), url("../fonts/Lora-Regular.ttf");
+  src: url("../fonts/Lora-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Lora;
+  src: url("../fonts/Lora-Bold.ttf");
+  font-weight: 700;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.ttf"), url("../fonts/OpenSans-Bold.ttf");
+  src: url("../fonts/OpenSans-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.ttf");
+  font-weight: 700;
 }
 * {
   margin: 0;
@@ -48,6 +65,7 @@ li {
 }
 
 button {
+  border: none;
   letter-spacing: 0.03em;
 }
 
@@ -103,7 +121,6 @@ button {
 .header__reservation-btn {
   width: 180px;
   height: 60px;
-  border: none;
   border-radius: 10px;
   background-color: #D95845;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
@@ -317,9 +334,14 @@ button {
   color: #000;
 }
 
-.footer {
-  background-color: #282828;
+.footer p {
   color: #fff;
+}
+
+.footer {
+  text-align: center;
+  color: #fff;
+  background-color: #282828;
 }
 .footer__wrapper {
   padding: 40px 51px 25px 50px;
@@ -327,9 +349,83 @@ button {
   flex-direction: column;
   gap: 20px;
 }
+.footer__logo {
+  width: 108px;
+  height: 27px;
+  margin: 0 auto;
+  background-image: url("../images/footer-logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.footer__get-in-touch__heading {
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.footer__btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer__btn {
+  width: 210px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+}
+.footer__btn_reservation {
+  font-weight: 700;
+  color: #fff;
+  background: #D95845;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.footer__btn_call-me {
+  font-weight: 600;
+  color: #2F70D9;
+  background-color: #282828;
+  border: 2px solid #2F70D9;
+}
+.footer__contacts__heading {
+  margin-bottom: 10px;
+}
+.footer__contacts__heading {
+  font-size: 20px;
+  line-height: 26px;
+}
+.footer__contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.footer__contacts__address-wrapper, .footer__contacts__phone-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer__contacts__phone-wrapper {
+  text-align: left;
+}
+.footer__contacts__address {
+  font-size: 16px;
+  white-space: nowrap;
+}
+.footer__contacts__address_bold {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+}
+.footer__contacts__phone {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
 .footer__copyright {
   font-family: "Lora";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
