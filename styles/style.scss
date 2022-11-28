@@ -20,22 +20,45 @@ $cta-color: #D95845;
 
 body {
     font-family: "Open Sans", Arial, sans-serif;
+    letter-spacing: 0.03em;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
     font-family: Lora, "Times New Roman", serif;
+    font-weight: 700;
+    color: $accent-color;
+}
+
+h2 {
+    max-width: fit-content;
+    height: 38px;
+
+    font-size: 30px;
+    line-height: 38px;
+
+    background-image: url('../images/wave-decoration.svg');
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+p,
+li {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 141.18%;
+    color: $main-color;
+}
+
+button {
+    letter-spacing: 0.03em;
 }
 
 .container {
     margin: 0 24px;
-}
-
-.text {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 141.18%;
-    letter-spacing: 0.03em;
-    color: $main-color;
 }
 
 .header {
@@ -90,10 +113,7 @@ h1 {
         position: absolute;
         top: -8px;
         font-size: 60px;
-        font-weight: 700;
         line-height: 77px;
-        letter-spacing: 0.03em;
-        color: $accent-color;
     }
 
     &__reservation-btn {
@@ -108,7 +128,6 @@ h1 {
         font-weight: 700;
         line-height: 22px;
         text-align: center;
-        letter-spacing: 0.03em;
         color: #FFFFFF;
     }
 
@@ -120,25 +139,13 @@ h1 {
     }
 }
 
-.about-us {
-    margin-top: 60px;
-
-    &__heading {
-        max-width: fit-content;
-        height: 38px;
-
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 38px;
-        letter-spacing: 0.03em;
-        color: $accent-color;
-
-        background-image: url('../images/wave-decoration.svg');
-        background-size: 60px;
-        background-repeat: no-repeat;
-        background-position: top right;
+.main {
+    &__section {
+        margin-top: 60px;
     }
+}
 
+.about-us {
     &__text-wrapper {
         margin: 30px 0;
         display: flex;
@@ -151,5 +158,105 @@ h1 {
         background-image: url('../images/about-us-img.svg');
         background-size: contain;
         background-repeat: no-repeat;
+    }
+}
+
+.we-offer {
+    &__cards-wrapper {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+
+    &__card {
+        max-width: 126px;
+        text-align: center;
+    }
+}
+
+.offer-card {
+    &__heading {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    &__text {
+        font-size: 10px;
+    }
+}
+
+.rooms {
+    &__cards-wrapper {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__card {
+        max-width: 285px;
+        padding: 30px 31px;
+        border: 3px solid $accent-color;
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.room-card {
+    &__img {
+        height: 80px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        &_room-for-1 {
+            background-image: url('../images/room-for-1.svg');
+        }
+
+        &_room-for-2 {
+            background-image: url('../images/room-for-2.svg');
+        }
+    }
+
+    &__heading {
+        font-size: 20px;
+        line-height: 26px;
+        white-space: nowrap;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__li {
+        font-size: 16px;
+        list-style-type: none;
+        padding-left: 30px;
+        background-image: url('../images/list-disc.svg');
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-position: left center;
+    }
+
+    &__price-wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__price {
+        font-family: 'Lora';
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 32px;
+        color: $cta-color;
     }
 }
