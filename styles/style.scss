@@ -59,6 +59,10 @@ h4 {
     color: $accent-color;
 }
 
+h4 {
+    font-size: 16px;
+}
+
 h2 {
     max-width: fit-content;
     height: 38px;
@@ -106,6 +110,8 @@ button {
         display: flex;
         flex-direction: column;
         gap: 40px;
+
+        display: none;
     }
 
     &__nav-list {
@@ -232,6 +238,7 @@ button {
         top: -8px;
         font-size: 60px;
         line-height: 77px;
+        letter-spacing: 0.03em;
     }
 
     &__reservation-btn {
@@ -469,6 +476,11 @@ button {
 }
 
 .contacts {
+    &__map {
+        height: 270px;
+        background-color: lightgreen;
+    }
+
     &__card {
         padding: 20px 52px 20px 51px;
         display: flex;
@@ -656,5 +668,237 @@ button {
         font-size: 16px;
         line-height: 20px;
         letter-spacing: initial;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    p,
+    li {
+        font-size: 16px;
+    }
+
+    h2 {
+        height: 64px;
+        font-size: 50px;
+        line-height: 64px;
+        background-size: 130px;
+    }
+
+    .container {
+        margin: 0 185px;
+    }
+
+    .header {
+        position: relative;
+        margin-top: 30px;
+
+        &__top {
+            height: 49px;
+            align-items: flex-start;
+        }
+
+        &__menu-icon {
+            display: none;
+        }
+
+        &__main {
+            gap: 40px;
+            margin-top: 229.5px;
+            margin-bottom: 174.5px;
+            width: 497px;
+        }
+
+        &__heading-wrapper {
+            width: 497px;
+            height: 116px;
+            background-image: url(../images/wave-decoration_gostinica-desktop.svg);
+            background-size: 180px;
+        }
+
+        &__heading {
+            top: -18px;
+            font-size: 131px;
+            line-height: 168px;
+        }
+
+        &__reservation-btn {
+            width: 285px;
+            height: 65px;
+            font-size: 22px;
+            line-height: 30px;
+        }
+
+        &__background-img {
+            position: absolute;
+            left: 44.31%;;
+            bottom: 15px;
+            width: 706px;
+            height: 602px;
+            z-index: -1;
+        }
+    }
+
+    .main {
+        margin-bottom: 100px;
+
+        &__section {
+            margin-top: 50px;
+        }
+    }
+
+    .about-us {
+        position: relative;
+
+        &__text-wrapper {
+            margin: 144px 0 203px;
+            width: 391px;
+        }
+
+        &__background-img {
+            position: absolute;
+            bottom: 50px;
+            left: 420px;
+            width: 810px;
+            height: 467px;
+            overflow-y: hidden;
+        }
+    }
+
+    .we-offer {
+        &__cards-wrapper {
+            margin: 80px 105px 50px;
+            gap: 50px;
+            justify-content: space-between;
+        }
+
+        &__card {
+            max-width: 237px;
+        }
+    }
+
+    .offer-card {
+        &__img {
+            width: 65px;
+            height: 65px;
+            background-size: contain;
+            margin-bottom: 20px;
+        }
+
+        &__img_wi-fi {
+            width: 75px;
+            height: 65px;
+        }
+
+        &__img_banquet {
+            width: 71.91px;
+            height: 65px;
+        }
+
+        &__heading {
+            margin-bottom: 10px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+    }
+
+    .rooms {
+        &__cards-wrapper {
+            width: 600px;
+            margin: 80px auto 50px;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+    }
+
+    .reviews {
+        &__cards-wrapper {
+            margin-top: 80px;
+            margin-bottom: 50px;
+            gap: 30px;
+            flex-direction: row;
+        }
+    }
+
+    .review-card {
+        padding: 25px 24px;
+        width: 285px;
+        gap: 29px;
+
+        &__user-pic {
+            height: 100px;
+            width: 100px;
+        }
+    }
+
+    .contacts {
+        position: relative;
+
+        &__map {
+            height: 503px;
+        }
+
+        &__card {
+            position: absolute;
+            bottom: 34px;
+            left: 75px;
+
+            padding: 32px 49px 31px 48px;
+            gap: 25px;
+        }
+
+        &__address-wrapper,
+        &__phone-wrapper {
+            gap: 10px;
+        }
+
+        &__address-wrapper {
+            width: 205px;
+        }
+
+        &__address_bold {
+            font-size: 18px;
+        }
+
+        &__phone {
+            font-size: 30px;
+            line-height: 41px;
+        }
+
+        &__socials-wrapper {
+            gap: 30px;
+        }
+
+        &__socials {
+            height: 60px;
+            width: 60px;
+        }
+    }
+
+    .footer {
+        text-align: left;
+
+        &__wrapper {
+            padding: 40px 185px 25px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 110.75px;
+        }
+
+        &__logo {
+            margin: 0;
+        }
+
+        &__contacts {
+            &__wrapper {
+                align-items: flex-start;
+                gap: 15px;
+            }
+        }
     }
 }

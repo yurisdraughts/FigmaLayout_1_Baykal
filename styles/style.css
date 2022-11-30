@@ -48,6 +48,10 @@ h4 {
   color: #2F70D9;
 }
 
+h4 {
+  font-size: 16px;
+}
+
 h2 {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
@@ -93,6 +97,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  display: none;
 }
 .header__nav-list {
   display: flex;
@@ -197,6 +202,7 @@ button {
   top: -8px;
   font-size: 60px;
   line-height: 77px;
+  letter-spacing: 0.03em;
 }
 .header__reservation-btn {
   width: 180px;
@@ -388,6 +394,10 @@ button {
   font-weight: 300;
 }
 
+.contacts__map {
+  height: 270px;
+  background-color: lightgreen;
+}
 .contacts__card {
   padding: 20px 52px 20px 51px;
   display: flex;
@@ -542,4 +552,184 @@ button {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: initial;
+}
+
+@media (min-width: 1024px) {
+  p,
+li {
+    font-size: 16px;
+  }
+  h2 {
+    height: 64px;
+    font-size: 50px;
+    line-height: 64px;
+    background-size: 130px;
+  }
+  .container {
+    margin: 0 185px;
+  }
+  .header {
+    position: relative;
+    margin-top: 30px;
+  }
+  .header__top {
+    height: 49px;
+    align-items: flex-start;
+  }
+  .header__menu-icon {
+    display: none;
+  }
+  .header__main {
+    gap: 40px;
+    margin-top: 229.5px;
+    margin-bottom: 174.5px;
+    width: 497px;
+  }
+  .header__heading-wrapper {
+    width: 497px;
+    height: 116px;
+    background-image: url(../images/wave-decoration_gostinica-desktop.svg);
+    background-size: 180px;
+  }
+  .header__heading {
+    top: -18px;
+    font-size: 131px;
+    line-height: 168px;
+  }
+  .header__reservation-btn {
+    width: 285px;
+    height: 65px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .header__background-img {
+    position: absolute;
+    left: 44.31%;
+    bottom: 15px;
+    width: 706px;
+    height: 602px;
+    z-index: -1;
+  }
+  .main {
+    margin-bottom: 100px;
+  }
+  .main__section {
+    margin-top: 50px;
+  }
+  .about-us {
+    position: relative;
+  }
+  .about-us__text-wrapper {
+    margin: 144px 0 203px;
+    width: 391px;
+  }
+  .about-us__background-img {
+    position: absolute;
+    bottom: 50px;
+    left: 420px;
+    width: 810px;
+    height: 467px;
+    overflow-y: hidden;
+  }
+  .we-offer__cards-wrapper {
+    margin: 80px 105px 50px;
+    gap: 50px;
+    justify-content: space-between;
+  }
+  .we-offer__card {
+    max-width: 237px;
+  }
+  .offer-card__img {
+    width: 65px;
+    height: 65px;
+    background-size: contain;
+    margin-bottom: 20px;
+  }
+  .offer-card__img_wi-fi {
+    width: 75px;
+    height: 65px;
+  }
+  .offer-card__img_banquet {
+    width: 71.91px;
+    height: 65px;
+  }
+  .offer-card__heading {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .offer-card__text {
+    font-size: 14px;
+  }
+  .rooms__cards-wrapper {
+    width: 600px;
+    margin: 80px auto 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .reviews__cards-wrapper {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    gap: 30px;
+    flex-direction: row;
+  }
+  .review-card {
+    padding: 25px 24px;
+    width: 285px;
+    gap: 29px;
+  }
+  .review-card__user-pic {
+    height: 100px;
+    width: 100px;
+  }
+  .contacts {
+    position: relative;
+  }
+  .contacts__map {
+    height: 503px;
+  }
+  .contacts__card {
+    position: absolute;
+    bottom: 34px;
+    left: 75px;
+    padding: 32px 49px 31px 48px;
+    gap: 25px;
+  }
+  .contacts__address-wrapper, .contacts__phone-wrapper {
+    gap: 10px;
+  }
+  .contacts__address-wrapper {
+    width: 205px;
+  }
+  .contacts__address_bold {
+    font-size: 18px;
+  }
+  .contacts__phone {
+    font-size: 30px;
+    line-height: 41px;
+  }
+  .contacts__socials-wrapper {
+    gap: 30px;
+  }
+  .contacts__socials {
+    height: 60px;
+    width: 60px;
+  }
+  .footer {
+    text-align: left;
+  }
+  .footer__wrapper {
+    padding: 40px 185px 25px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 110.75px;
+  }
+  .footer__logo {
+    margin: 0;
+  }
+  .footer__contacts__wrapper {
+    align-items: flex-start;
+    gap: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
