@@ -221,6 +221,7 @@ button {
   background-image: url("../images/header-img.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center left;
 }
 
 .main__section {
@@ -233,11 +234,20 @@ button {
   flex-direction: column;
   gap: 20px;
 }
+.about-us__wave-decoration {
+  width: 61px;
+  height: 5px;
+  margin-bottom: 20px;
+  background-image: url("../images/wave-decoration_about-us.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .about-us__background-img {
-  height: 182px;
+  height: 157px;
   background-image: url("../images/about-us-img.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center left;
 }
 
 .we-offer__cards-wrapper {
@@ -569,7 +579,6 @@ li {
     margin: 0 185px;
   }
   .header {
-    position: relative;
     margin-top: 30px;
   }
   .header__top {
@@ -579,11 +588,20 @@ li {
   .header__menu-icon {
     display: none;
   }
+  .header__wrapper-main-background-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 105px;
+  }
   .header__main {
     gap: 40px;
-    margin-top: 229.5px;
-    margin-bottom: 174.5px;
     width: 497px;
+    margin: 0;
+  }
+  .header__text {
+    width: 483px;
   }
   .header__heading-wrapper {
     width: 497px;
@@ -603,33 +621,41 @@ li {
     line-height: 30px;
   }
   .header__background-img {
-    position: absolute;
-    left: 44.31%;
-    bottom: 15px;
     width: 706px;
     height: 602px;
-    z-index: -1;
   }
   .main {
     margin-bottom: 100px;
   }
   .main__section {
     margin-top: 50px;
+    padding-bottom: 50px;
   }
-  .about-us {
+  .about-us__wave-decoration {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 97.5px;
+    height: 9px;
+    margin: 0;
+  }
+  .about-us__wrapper-text-background-img {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
   .about-us__text-wrapper {
-    margin: 144px 0 203px;
+    margin: 0;
     width: 391px;
   }
+  .about-us__text {
+    width: 390px;
+  }
   .about-us__background-img {
-    position: absolute;
-    bottom: 50px;
-    left: 420px;
     width: 810px;
     height: 467px;
-    overflow-y: hidden;
   }
   .we-offer__cards-wrapper {
     margin: 80px 105px 50px;
@@ -663,14 +689,13 @@ li {
   }
   .rooms__cards-wrapper {
     width: 600px;
-    margin: 80px auto 50px;
+    margin: 80px auto 0;
     display: flex;
     flex-direction: row;
     gap: 30px;
   }
   .reviews__cards-wrapper {
     margin-top: 80px;
-    margin-bottom: 50px;
     gap: 30px;
     flex-direction: row;
   }
@@ -685,6 +710,7 @@ li {
   }
   .contacts {
     position: relative;
+    padding-bottom: 0;
   }
   .contacts__map {
     height: 503px;
