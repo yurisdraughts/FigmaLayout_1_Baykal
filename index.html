@@ -12,38 +12,41 @@
 <body>
     <div class="container">
         <header class="header">
-            <div class="header__top">
-                <div class="header__logo"></div>
-                <div class="header__menu-icon"></div>
-            </div>
-            <div class="header__menu">
-                <nav>
-                    <ul class="header__nav-list">
-                        <li class="header__nav-li header__nav-li_main">Главная</li>
-                        <li class="header__nav-li">О гостинице</li>
-                        <li class="header__nav-li">Преимущества</li>
-                        <li class="header__nav-li">Номера</li>
-                        <li class="header__nav-li">Отзывы</li>
-                    </ul>
-                </nav>
-
-                <button class="header__call-me-btn">Обратный звонок</button>
-
-                <div class="header__contacts">
-                    <div class="header__contacts__address-wrapper">
-                        <p class="header__contacts__address header__contacts__address_bold">Адрес:</p>
-                        <p class="header__contacts__address">Кайдаловская ул., 37, Чита</p>
-                    </div>
-                    <div class="header__contacts__phone-wrapper">
-                        <div class="header__contacts__phone">+7 (3022) 217856</div>
-                        <div class="header__contacts__phone">+79294830255</div>
-                    </div>
-                    <div class="header__contacts__socials-wrapper">
-                        <div class="header__contacts__socials header__contacts__viber"></div>
-                        <div class="header__contacts__socials header__contacts__whatsapp"></div>
+            <div class="header__wrapper-top-menu">
+                <div class="header__top">
+                    <div class="header__logo"></div>
+                    <div class="header__menu-icon"></div>
+                </div>
+                <div class="header__menu">
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-li header__nav-li_main">Главная</li>
+                            <li class="header__nav-li">О гостинице</li>
+                            <li class="header__nav-li">Преимущества</li>
+                            <li class="header__nav-li">Номера</li>
+                            <li class="header__nav-li">Отзывы</li>
+                        </ul>
+                    </nav>
+    
+                    <button class="header__call-me-btn">Обратный звонок</button>
+    
+                    <div class="header__contacts">
+                        <div class="header__contacts__address-wrapper">
+                            <p class="header__contacts__address header__contacts__address_bold">Адрес:</p>
+                            <p class="header__contacts__address">Кайдаловская ул., 37, Чита</p>
+                        </div>
+                        <div class="header__contacts__phone-wrapper">
+                            <div class="header__contacts__phone">+7 (3022) 217856</div>
+                            <div class="header__contacts__phone">+79294830255</div>
+                        </div>
+                        <div class="header__contacts__socials-wrapper">
+                            <div class="header__contacts__socials header__contacts__viber"></div>
+                            <div class="header__contacts__socials header__contacts__whatsapp"></div>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="header__wrapper-main-background-img">
                 <div class="header__main">
                     <div class="header__heading-wrapper">
@@ -257,31 +260,47 @@
 
     <footer class="footer">
         <div class="footer__wrapper">
-            <div class="footer__logo"></div>
-            <div class="footer__get-in-touch">
-                <h3 class="footer__get-in-touch__heading">Быстрая связь</h3>
-                <div class="footer__btn-wrapper">
-                    <button class="footer__btn footer__btn_reservation">Забронировать</button>
-                    <button class="footer__btn footer__btn_call-me">Обратный звонок</button>
+            <div class="footer__wrapper_inner">
+                <div class="footer__logo"></div>
+                <div class="footer__nav">
+                    <nav>
+                        <h3 class="footer__nav-heading">Навигация</h3>
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-li">Главная</li>
+                            <li class="footer__nav-li">О гостинице</li>
+                            <li class="footer__nav-li">Преимущества</li>
+                            <li class="footer__nav-li">Номера</li>
+                            <li class="footer__nav-li">Отзывы</li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
-            <div class="footer__contacts__card">
-                <h3 class="footer__contacts__heading">Контакты</h3>
-                <div class="footer__contacts__wrapper">
-                    <div class="footer__contacts__address-wrapper">
-                        <p class="footer__contacts__address footer__contacts__address_bold">Адрес:</p>
-                        <p class="footer__contacts__address">Кайдаловская ул., 37, Чита</p>
-                    </div>
-                    <div class="footer__contacts__phone-wrapper">
-                        <div class="footer__contacts__phone">+7 (3022) 217856</div>
-                        <div class="footer__contacts__phone">+79294830255</div>
-                    </div>
-                    <div class="footer__contacts__socials-wrapper">
-                        <div class="footer__contacts__socials footer__contacts__viber"></div>
-                        <div class="footer__contacts__socials footer__contacts__whatsapp"></div>
+                <div class="footer__get-in-touch">
+                    <h3 class="footer__get-in-touch__heading">Быстрая связь</h3>
+                    <div class="footer__btn-wrapper">
+                        <button class="footer__btn footer__btn_reservation">Забронировать</button>
+                        <button class="footer__btn footer__btn_call-me">Обратный звонок</button>
                     </div>
                 </div>
+                <div class="footer__up-btn"></div>
+                <div class="footer__contacts__card">
+                    <h3 class="footer__contacts__heading">Контакты</h3>
+                    <div class="footer__contacts__wrapper">
+                        <div class="footer__contacts__address-wrapper">
+                            <p class="footer__contacts__address footer__contacts__address_bold">Адрес:</p>
+                            <p class="footer__contacts__address">Кайдаловская ул., 37, Чита</p>
+                        </div>
+                        <div class="footer__contacts__phone-wrapper">
+                            <div class="footer__contacts__phone">+7 (3022) 217856</div>
+                            <div class="footer__contacts__phone">+79294830255</div>
+                        </div>
+                        <div class="footer__contacts__socials-wrapper">
+                            <div class="footer__contacts__socials footer__contacts__viber"></div>
+                            <div class="footer__contacts__socials footer__contacts__whatsapp"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="footer__copyright">© Все права защищены.</div>
         </div>
     </footer>
