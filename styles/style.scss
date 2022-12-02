@@ -1,8 +1,33 @@
+/*
+CONTENT:
+
+Variables
+Fonts
+Tags
+
+Header
+Main
+    About Us
+    We Offer
+        Offer Card
+    Rooms
+        Room Card
+    Reviews
+        Review Card
+    Contacts
+Footer
+
+Media Queries
+    Responsive Menu
+*/
+
+// Variables
 $main-color: #686868;
 $accent-color: #2F70D9;
 $cta-color: #D95845;
 $footer-color: #282828;
 
+// Fonts
 @font-face {
     font-family: Lora;
     src: url('../fonts/Lora-Regular.ttf');
@@ -39,6 +64,7 @@ $footer-color: #282828;
     font-weight: 800;
 }
 
+// Tags
 * {
     margin: 0;
     padding: 0;
@@ -106,6 +132,7 @@ button:hover {
     margin: 0 24px;
 }
 
+// Header
 .header {
     padding-top: 20px;
 
@@ -120,7 +147,6 @@ button:hover {
     &__menu {
         margin-top: 40px;
         margin-bottom: 40px;
-        display: flex;
         flex-direction: column;
         gap: 40px;
 
@@ -225,9 +251,18 @@ button:hover {
         width: 20px;
         height: 20px;
 
-        background-image: url('../images/menu-icon_closed.svg');
         background-size: contain;
         background-repeat: no-repeat;
+
+        cursor: pointer;
+
+        &_closed {
+            background-image: url('../images/menu-icon_closed.svg');
+        }
+
+        &_open {
+            background-image: url('../images/menu-icon_open.svg');
+        }
     }
 
     &__main {
@@ -280,12 +315,14 @@ button:hover {
     }
 }
 
+// Main
 .main {
     &__section {
         margin-top: 60px;
     }
 }
 
+// About Us
 .about-us {
     &__text-wrapper {
         margin: 30px 0;
@@ -312,6 +349,7 @@ button:hover {
     }
 }
 
+// We Offer
 .we-offer {
     &__cards-wrapper {
         margin-top: 30px;
@@ -363,6 +401,7 @@ button:hover {
     }
 }
 
+// Offer Card
 .offer-card {
     &__img {
         width: 36px;
@@ -391,6 +430,7 @@ button:hover {
     }
 }
 
+// Rooms
 .rooms {
     &__cards-wrapper {
         margin-top: 30px;
@@ -411,6 +451,7 @@ button:hover {
     }
 }
 
+// Room Card
 .room-card {
     &__img {
         height: 80px;
@@ -465,6 +506,7 @@ button:hover {
     }
 }
 
+// Reviews
 .reviews {
     &__cards-wrapper {
         margin-top: 30px;
@@ -474,6 +516,7 @@ button:hover {
     }
 }
 
+// Review Card
 .review-card {
     padding: 20px 42px 15px 56px;
     display: flex;
@@ -506,6 +549,7 @@ button:hover {
     }
 }
 
+// Contacts
 .contacts {
     &__map {
         width: 100%;
@@ -570,6 +614,7 @@ button:hover {
     }
 }
 
+// Footer
 .footer {
     text-align: center;
     color: #fff;
@@ -727,7 +772,19 @@ button:hover {
     }
 }
 
-@media (min-width: 1024px) {
+// Media Queries
+@media (min-width: 576px) {
+    .rooms {
+        &__cards-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
 
     p,
     li {
@@ -748,60 +805,13 @@ button:hover {
     .header {
         padding-top: 30px;
 
-        &__top {
-            display: block;
-            height: 49px;
-            align-items: flex-start;
-        }
-
         &__logo {
             width: 160px;
             height: 40px;
         }
 
-        &__menu-icon {
-            display: none;
-        }
-
-        &__menu {
-            display: flex;
-            flex-direction: row;
-            gap: 50px;
-            align-items: center;
-            margin: 0;
-        }
-
-        &__nav {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-
-        &__nav-list {
-            flex-direction: row;
-            gap: 30px;
-        }
-
-        &__nav-li_main {
-            position: relative;
-            background-image: none;
-        }
-
-        &__nav-li_main::after {
-            position: absolute;
-            bottom: -22px;
-            right: calc(50% - 48.75px);
-            content: url('../images/wave-decoration-nav-li-main.svg');
-        }
-
-        &__contacts {
-            display: none;
-        }
-
-        &__wrapper-top-menu {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+        &__top {
+            height: 49px;
         }
 
         &__wrapper-main-background-img {
@@ -894,7 +904,7 @@ button:hover {
 
     .we-offer {
         &__cards-wrapper {
-            margin: 80px 105px 50px;
+            margin: 80px 0 50px;
             gap: 50px;
             justify-content: space-between;
         }
@@ -936,20 +946,6 @@ button:hover {
     .rooms {
         &__background-img {
             margin-top: 80px;
-
-            background-image: url('../images/rooms_left.svg'), url('../images/rooms_right.svg');
-            background-size: 285px;
-            background-repeat: no-repeat;
-            background-position: left center, right center;
-        }
-
-        &__cards-wrapper {
-            width: 600px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 30px;
         }
 
         &__card {
@@ -972,6 +968,8 @@ button:hover {
             margin-top: 80px;
             gap: 30px;
             flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
 
@@ -981,7 +979,7 @@ button:hover {
         gap: 29px;
 
         &_last {
-            display: block;
+            display: flex;
         }
 
         &__user-pic {
@@ -1033,6 +1031,22 @@ button:hover {
         &__socials {
             height: 60px;
             width: 60px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .rooms {
+        &__cards-wrapper {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .we-offer {
+        &__cards-wrapper {
+            margin: 80px 105px 50px;
         }
     }
 
@@ -1100,5 +1114,81 @@ button:hover {
         &__copyright {
             text-align: center;
         }
+    }
+}
+
+@media (min-width: 1400px) {
+    .header {
+        &__top {
+            display: block;
+            align-items: flex-start;
+        }
+
+        &__menu-icon {
+            display: none;
+        }
+
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            align-items: center;
+            margin: 0;
+        }
+
+        &__nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__nav-list {
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        &__nav-li_main {
+            position: relative;
+            background-image: none;
+        }
+
+        &__nav-li_main::after {
+            position: absolute;
+            bottom: -22px;
+            right: calc(50% - 48.75px);
+            content: url('../images/wave-decoration-nav-li-main.svg');
+        }
+
+        &__contacts {
+            display: none;
+        }
+
+        &__wrapper-top-menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .rooms {
+        &__background-img {
+            background-image: url('../images/rooms_left.svg'), url('../images/rooms_right.svg');
+            background-size: 285px;
+            background-repeat: no-repeat;
+            background-position: left center, right center;
+        }
+    }
+}
+
+// Responsive Menu
+@media (max-width: 1400px) {
+    .header__menu_open {
+        display: flex;
+    }
+
+    .header__wrapper-main-background-img_closed {
+        display: none;
     }
 }
