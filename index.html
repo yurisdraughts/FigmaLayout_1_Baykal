@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <header class="header">
+        <header class="header" id="main">
             <div class="header__wrapper-top-menu">
                 <div class="header__top">
                     <div class="header__logo"></div>
@@ -20,11 +20,11 @@
                 <div class="header__menu">
                     <nav class="header__nav">
                         <ul class="header__nav-list">
-                            <li class="header__nav-li header__nav-li_main">Главная</li>
-                            <li class="header__nav-li">О гостинице</li>
-                            <li class="header__nav-li">Преимущества</li>
-                            <li class="header__nav-li">Номера</li>
-                            <li class="header__nav-li">Отзывы</li>
+                            <li class="header__nav-li header__nav-li_main"><a href="#main">Главная</a></li>
+                            <li class="header__nav-li"><a href="#about-us">О гостинице</a></li>
+                            <li class="header__nav-li"><a href="#we-offer">Преимущества</a></li>
+                            <li class="header__nav-li"><a href="#rooms">Номера</a></li>
+                            <li class="header__nav-li"><a href="#reviews">Отзывы</a></li>
                         </ul>
                     </nav>
     
@@ -40,8 +40,8 @@
                             <div class="header__contacts__phone">+79294830255</div>
                         </div>
                         <div class="header__contacts__socials-wrapper">
-                            <div class="header__contacts__socials header__contacts__viber"></div>
-                            <div class="header__contacts__socials header__contacts__whatsapp"></div>
+                            <a href="#" class="header__contacts__socials header__contacts__viber"></a>
+                            <a href="#" class="header__contacts__socials header__contacts__whatsapp"></a>
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
         </header>
 
         <main class="main">
-            <section class="main__section about-us">
+            <section class="main__section about-us" id="about-us">
                 <h2 class="about-us__heading">О гостинице</h2>
                 <div class="about-us__wrapper-text-background-img">
                     <div class="about-us__text-wrapper">
@@ -84,7 +84,7 @@
                 </div>
             </section>
 
-            <section class="main__section we-offer">
+            <section class="main__section we-offer" id="we-offer">
                 <h2 class="we-offer__heading">Мы предлагаем</h2>
                 <div class="we-offer__cards-wrapper">
                     <div class="we-offer__card">
@@ -163,7 +163,7 @@
                 </div>
             </section>
 
-            <section class="main__section rooms">
+            <section class="main__section rooms" id="rooms">
                 <h2 class="rooms__heading">Наши номера</h2>
                 <div class="rooms__background-img">
                     <div class="rooms__cards-wrapper">
@@ -204,7 +204,7 @@
                 </div>
             </section>
 
-            <section class="main__section reviews">
+            <section class="main__section reviews" id="reviews">
                 <h2 class="reviews__heading">Ваши отзывы</h2>
                 <div class="reviews__cards-wrapper">
                     <div class="review-card">
@@ -265,8 +265,8 @@
                         <div class="contacts__phone">+79294830255</div>
                     </div>
                     <div class="contacts__socials-wrapper">
-                        <div class="contacts__socials contacts__viber"></div>
-                        <div class="contacts__socials contacts__whatsapp"></div>
+                        <a href="#" class="contacts__socials contacts__viber"></a>
+                        <a href="#" class="contacts__socials contacts__whatsapp"></a>
                     </div>
                 </div>
             </section>
@@ -281,11 +281,11 @@
                     <nav>
                         <h3 class="footer__nav-heading">Навигация</h3>
                         <ul class="footer__nav-list">
-                            <li class="footer__nav-li">Главная</li>
-                            <li class="footer__nav-li">О гостинице</li>
-                            <li class="footer__nav-li">Преимущества</li>
-                            <li class="footer__nav-li">Номера</li>
-                            <li class="footer__nav-li">Отзывы</li>
+                            <li class="footer__nav-li"><a href="#main">Главная</a></li>
+                            <li class="footer__nav-li"><a href="#about-us">О гостинице</a></li>
+                            <li class="footer__nav-li"><a href="#we-offer">Преимущества</a></li>
+                            <li class="footer__nav-li"><a href="#rooms">Номера</a></li>
+                            <li class="footer__nav-li"><a href="#reviews">Отзывы</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -296,7 +296,7 @@
                         <button class="footer__btn footer__btn_call-me">Обратный звонок</button>
                     </div>
                 </div>
-                <div class="footer__up-btn"></div>
+                <a class="footer__up-btn" href="#main"></a>
                 <div class="footer__contacts__card">
                     <h3 class="footer__contacts__heading">Контакты</h3>
                     <div class="footer__contacts__wrapper">
@@ -309,8 +309,8 @@
                             <div class="footer__contacts__phone">+79294830255</div>
                         </div>
                         <div class="footer__contacts__socials-wrapper">
-                            <div class="footer__contacts__socials footer__contacts__viber"></div>
-                            <div class="footer__contacts__socials footer__contacts__whatsapp"></div>
+                            <a href="#" class="footer__contacts__socials footer__contacts__viber"></a>
+                            <a href="#" class="footer__contacts__socials footer__contacts__whatsapp"></a>
                         </div>
                     </div>
                 </div>
@@ -319,6 +319,7 @@
             <div class="footer__copyright">© Все права защищены.</div>
         </div>
     </footer>
+    <script src="scrypts/scrypt.js"></script>
 </body>
 
 </html>
